@@ -1,13 +1,149 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
+ul {
+    list-style: none;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar {
+    background-color: black;
+    font-family: "Montserrat";
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    height: 70px;
+    /* float: left; */
+    position: relative;
+}
+
+/* Navbar */
+/* .navbar div:nth-child(1),
+.line,
+.grow-list,
+.navbar div:nth-child(4) {
+    display: inline-block;
+    padding: auto 0px;
+    margin: auto 0px;
+} */
+.navbar div:nth-child(1) {
+    /* margin: 10px */
+    /* position: absolute; */
+    height: 100%;
+    /* width: 15%; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.logo {
+    height: 30px;
+    /* display: inline-block; */
+    /* padding: 10px 0; */
+}
+
+.line {
+    display: inline-block;
+    margin: 0px 70px;
+    background-color: #fff;
+    height: 30px;
+    width: 2px;
+}
+
+.grow-list {
+    position: absolute;
+    display: inline-flex;
+    height: 100%;
+    width: 40%;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .arrow {
-    border: solid black;
+    border: solid white;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
     transform: rotate(45deg);
+    margin: 0px 0px 0px 20px;
+}
+
+.navbar div:nth-child(4) {
+    position: absolute;
+    /* display: inline-flex; */
+    display: flex;
+    height: 100%;
+    right: 5%;
+    align-items: center;
+    top: 0;
+}
+
+.button-small {
+    height: 30px;
+    align-items: center;
+    background-color: #BA0CC5;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+/* Hero */
+.hero {
+    color: white;
+    /* background-color: #BA0CC5; */
     display: inline-block;
-    margin: 0px 10px;
+    width: 50%;
+    margin-top: 10%;
+}
+
+.container section:nth-child(2) {
+    background-image: url(./assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.hero-heading {
+    font-size: 60px;
+}
+
+.hero-description {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 7%;
+    margin-top: 1%;
+}
+
+.button-large::first-letter{
+    text-transform: uppercase;
+}
+
+.button-large{
+    border: 0px;
+    text-transform: lowercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-size: 20px;
+    background-color: #BA0CC5;
 }
